@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatabaseConnectionTestDetailsDataSet" targetNamespace="http://tempuri.org/DatabaseConnectionTestDetailsDataSet.xsd" xmlns:mstns="http://tempuri.org/DatabaseConnectionTestDetailsDataSet.xsd" xmlns="http://tempuri.org/DatabaseConnectionTestDetailsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatabaseConnectionTestDetailsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DatabaseConnectionTestDetailsDataSet" msprop:Generator_UserDSName="DatabaseConnectionTestDetailsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DatabaseConnectionTestDetails" msprop:Generator_TableClassName="DatabaseConnectionTestDetailsDataTable" msprop:Generator_TableVarName="tableDatabaseConnectionTestDetails" msprop:Generator_TablePropName="DatabaseConnectionTestDetails" msprop:Generator_RowDeletingName="DatabaseConnectionTestDetailsRowDeleting" msprop:Generator_RowChangingName="DatabaseConnectionTestDetailsRowChanging" msprop:Generator_RowEvHandlerName="DatabaseConnectionTestDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="DatabaseConnectionTestDetailsRowDeleted" msprop:Generator_UserTableName="DatabaseConnectionTestDetails" msprop:Generator_RowChangedName="DatabaseConnectionTestDetailsRowChanged" msprop:Generator_RowEvArgName="DatabaseConnectionTestDetailsRowChangeEvent" msprop:Generator_RowClassName="DatabaseConnectionTestDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConnectionName" msprop:Generator_ColumnVarNameInTable="columnConnectionName" msprop:Generator_ColumnPropNameInRow="ConnectionName" msprop:Generator_ColumnPropNameInTable="ConnectionNameColumn" msprop:Generator_UserColumnName="ConnectionName" type="xs:string" />
+              <xs:element name="OrdinalIndex" msprop:Generator_ColumnVarNameInTable="columnOrdinalIndex" msprop:Generator_ColumnPropNameInRow="OrdinalIndex" msprop:Generator_ColumnPropNameInTable="OrdinalIndexColumn" msprop:Generator_UserColumnName="OrdinalIndex" type="xs:int" minOccurs="0" />
+              <xs:element name="ConnectionString" msprop:Generator_ColumnVarNameInTable="columnConnectionString" msprop:Generator_ColumnPropNameInRow="ConnectionString" msprop:Generator_ColumnPropNameInTable="ConnectionStringColumn" msprop:Generator_UserColumnName="ConnectionString" type="xs:string" minOccurs="0" />
+              <xs:element name="ProviderName" msprop:Generator_ColumnVarNameInTable="columnProviderName" msprop:Generator_ColumnPropNameInRow="ProviderName" msprop:Generator_ColumnPropNameInTable="ProviderNameColumn" msprop:Generator_UserColumnName="ProviderName" type="xs:string" minOccurs="0" />
+              <xs:element name="WasTestRun" msprop:Generator_ColumnVarNameInTable="columnWasTestRun" msprop:Generator_ColumnPropNameInRow="WasTestRun" msprop:Generator_ColumnPropNameInTable="WasTestRunColumn" msprop:Generator_UserColumnName="WasTestRun" type="xs:boolean" minOccurs="0" />
+              <xs:element name="WasTestSuccessful" msprop:Generator_ColumnVarNameInTable="columnWasTestSuccessful" msprop:Generator_ColumnPropNameInRow="WasTestSuccessful" msprop:Generator_ColumnPropNameInTable="WasTestSuccessfulColumn" msprop:Generator_UserColumnName="WasTestSuccessful" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ConnectionErrorText" msprop:Generator_ColumnVarNameInTable="columnConnectionErrorText" msprop:Generator_ColumnPropNameInRow="ConnectionErrorText" msprop:Generator_ColumnPropNameInTable="ConnectionErrorTextColumn" msprop:Generator_UserColumnName="ConnectionErrorText" type="xs:string" minOccurs="0" />
+              <xs:element name="TestStatusDescription" msprop:Generator_ColumnVarNameInTable="columnTestStatusDescription" msprop:Generator_ColumnPropNameInRow="TestStatusDescription" msprop:Generator_ColumnPropNameInTable="TestStatusDescriptionColumn" msprop:Generator_UserColumnName="TestStatusDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="Source" msprop:Generator_ColumnVarNameInTable="columnSource" msprop:Generator_ColumnPropNameInRow="Source" msprop:Generator_ColumnPropNameInTable="SourceColumn" msprop:Generator_UserColumnName="Source" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ConnectionTestKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DatabaseConnectionTestDetails" />
+      <xs:field xpath="mstns:ConnectionName" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
