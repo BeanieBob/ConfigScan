@@ -58,6 +58,9 @@
   <PropertyGroup>
     <ApplicationIcon>ConfigScan.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.Administration, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -150,11 +153,15 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>md "$(TargetDir)Plugins\"
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>md "$(TargetDir)Plugins\"
 copy "$(SolutionDir)TeeBee.ConfigScan.MsSqlServer\$(OutDir)TeeBee.ConfigScan.MsSqlServer.dll" "$(TargetDir)Plugins\"
 copy "$(SolutionDir)TeeBee.ConfigScan.Oracle\$(OutDir)TeeBee.ConfigScan.Oracle.dll" "$(TargetDir)Plugins\"
 copy "$(SolutionDir)TeeBee.ConfigScan.PostgreSql\$(OutDir)TeeBee.ConfigScan.PostgreSql.dll" "$(TargetDir)Plugins\"
-copy "$(SolutionDir)TeeBee.ConfigScan.PostgreSql\$(OutDir)Npgsql.dll" "$(TargetDir)Plugins\"</PreBuildEvent>
+copy "$(SolutionDir)TeeBee.ConfigScan.PostgreSql\$(OutDir)Npgsql.dll" "$(TargetDir)Plugins\"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
