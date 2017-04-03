@@ -1,0 +1,15 @@
+**Config Scan**
+A visual windows tool to ease the task of verifying connection strings in .Net config files
+
+If you are working on projects which use many database connections, this tool will be
+of value to you - particularly if database locations or credentials are frequently
+changing.
+
+ This tool can
+
+- Asynchronously test database connections for efficient prompt results.
+- Test database connection strings in application config files
+- Test database connection strings in web.config files.
+- Test implicitly inherited connection strings
+- Test database connection strings presented in an editable xml input box.
+- Be extended by adding plugins that can test currently unsupported databases.
